@@ -2,20 +2,38 @@
 * {
   font-family: 'Josefin Slab', serif; }
 
-.homePrimero {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  height: 100vh; }
-
 .homePrimeroPresentacion h1 {
+  display: flex;
   overflow: hidden;
   letter-spacing: 0.2vh;
   border-right: 0.15em solid black;
   white-space: nowrap;
   margin: 0 auto;
   animation: typing 3.5s steps(50, end), blink-caret 0.5s step-end infinite; }
+
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0; }
+  body .home {
+    width: 100%;
+    height: 100%;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll; }
+    body .home section {
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      width: 100vw;
+      height: 100vh;
+      scroll-snap-align: start; }
+      body .home section:nth-of-type(1) {
+        background-color: darkgoldenrod; }
+      body .home section:nth-of-type(2) {
+        background-color: #6b510f; }
+      body .home section:nth-of-type(3) {
+        background-color: #4a2abd; }
 
 @keyframes typing {
   from {
