@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@600&display=swap");
+* {
+  font-family: 'Josefin Slab', serif; }
+
+.homePrimero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh; }
+
+.homePrimeroPresentacion h1 {
+  overflow: hidden;
+  letter-spacing: 0.2vh;
+  border-right: 0.15em solid black;
+  white-space: nowrap;
+  margin: 0 auto;
+  animation: typing 3.5s steps(50, end), blink-caret 0.5s step-end infinite; }
+
+@keyframes typing {
+  from {
+    width: 0; }
+  to {
+    width: 100%; } }
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent; }
+  50% {
+    border-color: black; } }
