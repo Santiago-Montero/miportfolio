@@ -1,63 +1,90 @@
 @import "tipografia" ;
 *{
-    font-family: 'Josefin Slab', serif;
+    // font-family: 'Josefin Slab', serif;
+    font-family:'Baloo Tammudu 2', cursive;
 }
 
 
-.homePrimeroPresentacion h1{
+.homePrimeroPresentacion{
     display: flex;
-    overflow: hidden;
-    letter-spacing: 0.2vh;
-    border-right: 0.15em solid black;
-    white-space: nowrap;
-    margin: 0 auto;
-    animation: typing 3.5s steps(50, end), blink-caret 0.5s step-end infinite;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    width: 50vw;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.5);
+    backdrop-filter: blur( 8px );
+    -webkit-backdrop-filter: blur( 15.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    h1{
+        display: flex;
+        margin-top: 20px;
+    }
+}
+.homePrimeroPresentacionPerfil {
+    img{
+        width:15vw;
+        height: auto;
+    }
 }
 body {
-    width: 100vw;
-    height: 100vh;
-    margin: 0;
     .home{
-        width: 100%;
-        height: 100%;
+        height: 100vh;
+        width: 100vw;
         scroll-snap-type: y mandatory;
         overflow-y: scroll;
         section {
+            height: 100vh;
             display: flex;
             text-align: center;
             justify-content: center;
             align-items: center;
-            width: 100vw;
-            height: 100vh;
             scroll-snap-align: start;
             &:nth-of-type(1){
-                background-color: darkgoldenrod;
+                background-image: url("../img/fondoDibu.jpg");
             }
             &:nth-of-type(2){
-                background-color: rgb(107, 81, 15);
+                background-color: rgb(29, 211, 74);
             }
             &:nth-of-type(3){
-                background-color: rgb(74, 42, 189);
+                background-color: rgb(200, 198, 198);
             }
-            }
+        }
     }
 }
 
-@keyframes typing {
-    from {
-        width: 0;
-    }
-    to {
-        width: 100%;
-    }
-}
-
-@keyframes blink-caret {
-    from,
-        to{
-            border-color: transparent;
+.homeSegundoPresentacion{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    .cajaSkills{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        height: 250px;
+        width: 250px;
+        background-color: rgb(109, 124, 204);
+        -webkit-border-radius: 25px;
+        -moz-border-radius: 25px;
+        border-radius: 25px;
+        .cajaSkillsImg{
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+            justify-content: center;
+            img {
+                width: 200px;
+                height: auto;
+            }
         }
-        50% {
-            border-color: black;
+        .cajaSkillsImg:hover{
+            img {
+                width: 100px;
+                height: auto;
+            }
         }
+    }
 }
