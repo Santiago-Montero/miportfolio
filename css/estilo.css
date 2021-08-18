@@ -39,33 +39,78 @@ body .home {
     body .home section:nth-of-type(1) {
       background-image: url("../img/fondoDibu.jpg"); }
     body .home section:nth-of-type(2) {
-      background-color: #1dd34a; }
+      background-color: #152b3d; }
     body .home section:nth-of-type(3) {
+      background-color: #3c96e0; }
+    body .home section:nth-of-type(4) {
       background-color: #c8c6c6; }
 
 .homeSegundoPresentacion {
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-evenly;
-  align-items: center; }
-  .homeSegundoPresentacion .cajaSkills {
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+  color: white; }
+
+.homeTerceroPresentacion {
+  display: flex;
+  flex-flow: column wrap; }
+  .homeTerceroPresentacion .caja {
     display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    height: 250px;
-    width: 250px;
-    background-color: #6d7ccc;
-    -webkit-border-radius: 25px;
-    -moz-border-radius: 25px;
-    border-radius: 25px; }
-    .homeSegundoPresentacion .cajaSkills .cajaSkillsImg {
+    flex-flow: row wrap;
+    justify-content: space-between; }
+    .homeTerceroPresentacion .caja .cajaSkills {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center; }
+      .homeTerceroPresentacion .caja .cajaSkills .cajaSkillsImg {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: center; }
+        .homeTerceroPresentacion .caja .cajaSkills .cajaSkillsImg img {
+          width: 100px;
+          height: auto; }
+      .homeTerceroPresentacion .caja .cajaSkills .cajaSkillsImg:hover img {
+        width: 80px;
+        height: auto; }
+
+.homeCuartoPresentacion {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  width: 50%; }
+  .homeCuartoPresentacion .cajaContacto {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center; }
+    .homeCuartoPresentacion .cajaContacto .contacto {
       display: flex;
       flex-flow: column wrap;
-      align-items: center;
-      justify-content: center; }
-      .homeSegundoPresentacion .cajaSkills .cajaSkillsImg img {
-        width: 200px;
-        height: auto; }
-    .homeSegundoPresentacion .cajaSkills .cajaSkillsImg:hover img {
-      width: 100px;
-      height: auto; }
+      justify-content: space-between; }
+      .homeCuartoPresentacion .cajaContacto .contacto .contactoRed {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-between;
+        align-items: flex-start; }
+        .homeCuartoPresentacion .cajaContacto .contacto .contactoRed .contactoRedIcono {
+          display: flex;
+          flex-flow: column wrap;
+          justify-content: space-between;
+          align-items: flex-start;
+          margin-bottom: 5px; }
+          .homeCuartoPresentacion .cajaContacto .contacto .contactoRed .contactoRedIcono img {
+            width: 50px;
+            height: auto; }
+        .homeCuartoPresentacion .cajaContacto .contacto .contactoRed .contactoRedPlataforma {
+          display: flex;
+          flex-flow: column wrap;
+          justify-content: space-between;
+          align-items: flex-start; }
+        .homeCuartoPresentacion .cajaContacto .contacto .contactoRed .contactoRedUsuario {
+          display: flex;
+          flex-flow: column wrap;
+          justify-content: space-between;
+          align-items: flex-start; }
