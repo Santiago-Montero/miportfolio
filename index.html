@@ -4,204 +4,150 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <!--  CSS -->
+    <!--  CSS ilustation cherry -->
     <link rel="stylesheet" href="./css/estilo.css">
     <title>Mi portfolio</title>
 </head>
 <body>
-    <div class="home">
-        <section>
-            <div class="homePrimeroPresentacion">
-                <div class="homePrimeroPresentacionPerfil">
-                    <img src="./img/foto13.png" alt="Santiago Montero">
+    <header>
+        <div class="navegador container">
+            <h1> < Santi /> </h1>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skills">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects">Projects</a>
+                        </li>
+                        <li  class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#aboutme">About me</a>
+                        </li>
+                    </ul>
                 </div>
-                <h1><b>Santiago Montero</b></h1>
-                <p>Bienvenido a mi Sitio Web</p>
+            </nav>
+        </div>
+    </header>
+    <div class="body">
+        <section id="home" class="container">
+            <div class="home" id="home">
+                <div class="homeDescripcion">
+                    <img src="./img/blob.svg" class="burbuja" alt="burbuja">
+                    <h2 class="tituloNombre">Santiago Montero</h2>
+                    <h3 class="tituloDesarrollo">Desarrollador Front-end</h3>
+                    <div class="HomeCv">
+                        <a href="./cv/Montero_Santiago_cv.pdf" download="Montero_Santiago_cv">
+                            Descargar Cv
+                        </a>
+                    </div>
+                </div>
+                <div class="homeImg">
+                    <img src="./img/homeImg.png" alt="imagen de desarrollo fronend" >
+                </div>
             </div>
         </section>
-        <section>
-            <div class="homeSegundoPresentacion">
+        <section id="aboutme" class="container">
+            <div class="aboutMe sectionDescription animate__animated animate__backInDown">
                 <h2>Sobre Mi</h2>
-                <p>
-                    Soy un joven estudiante,
-                    sin antecedentes en el ámbito laboral,
-                    queriendo introducirme en este,
-                    para aportar mis conocimientos y
-                    facultades en las actividades que se requieran.
-                </p>
-
-                <h3>Educación</h3>
-
-                <p>2015-2019 Colegio Pio IX</p>
-                <p>Bachiller en Informatica</p>
-
-                <p>2020-Actualidad Universidad Tecnologica Nacional</p>
-                <p>ingenieria en sistemas de informacion, 2do Año</p>
-
-                <p>2020-Actualidad Universidad Tecnologica Nacional</p>
-                <p>ingenieria en sistemas de informacion</p>
-
-                <p>2021-Actualidad Coder House</p>
-                <p>Carrera FullStack</p>
-
-                <p>2021 (Marzo-Junio) Coder House</p>
-                <p>Curso de Desarrollo Web</p>
-                
-                <p>2021 (Junio-Agosto) Coder House</p>
-                <p>Curso de JavaScript</p>
-
-                <p>2021 (Agosto-Octubre) Coder House</p>
-                <p>Curso de React Js</p>
+                <div class="aboutMeDescripcion">
+                    <div class="aboutMeDescripcionImg">
+                        <img src="./img/foto13.png" alt="santiago montero">
+                    </div>
+                    <div class="aboutMeDescripcionTexto">
+                        <p>Estudiante de ingeniera en sistemas en la universidad tecnológica nacional, con conocimientos en desarrollo frontend. Apasionado por la programación y con ganas de poder introducirme  en el ámbito laboral, para poder aportar mis conocimientos y poder adquirir nuevos.</p>
+                        <div class="aboutMeDescripcionRedes">
+                            <a href="https://www.linkedin.com/in/santiago-montero-13b8721b8">
+                                <img src="./img/linkedin-icon-2.svg" alt="linkedin" >
+                            </a>
+                            <a href="https://github.com/Santiago-Montero">
+                                <img src="./img/github-icon-1.svg" alt="github" >
+                            </a>
+                            <a href="https://www.instagram.com/santi.monter/">
+                                <img src="./img/instagram-2-1.svg" alt="instagram" >
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
-        <section>
-            <div class="homeTerceroPresentacion">
+        <section id="skills" class="container">
+            <div class="skills sectionDescription">
                 <h2>Skills</h2>
-                <div class="caja">                    
-                    <div class="cajaSkills">
-                        <div class="cajaSkillsImg">
-                            <img src="./img/html.svg" alt="">
-                            <!-- <img src="./img/html-1.svg" alt=""> -->
-                        </div>
-                        <div class="cajaSkillsCalificacion">
-                            <p>80%</p>
-                        </div>
+                <div class="skillsDescripcion animate__animated animate__backInDown">
+                    <div class="skillsDescripcionImg">
+                        <img src="./img/skillImg.png" alt="programador">
                     </div>
-                    <div class="cajaSkills">
-                        <div class="cajaSkillsImg">
-                            <img src="./img/css.svg" alt="">
-                            <!-- <img src="./img/css-3.svg" alt=""> -->
+                    <div class="skillsDescripcionAll">
+                        <div class="skillsDescripcion">
+                            <h3>Lenguajes / Frameworks</h3>
+                            <div class="skillsDescripcionicon">
+                                <img src="./img/html-5.svg" alt="" class="icon">
+                                <img src="./img/css3.svg" alt="" class="icon">
+                                <img src="./img/js1.svg" alt="" class="icon">
+                                <img src="./img/react.svg" alt="" class="icon">
+                                <img src="./img/bootstrap.svg" alt="" class="icon">
+                                
+                            </div>
+                            <div class="skillsDescripcionicon">
+                                <img src="./img/sass-1.svg" alt="" class="icon">
+                                <img src="./img/jquery.svg" alt="" class="icon">
+                            </div>
                         </div>
-                        <div class="cajaSkillsCalificacion">
-                            <p>80%</p>
-                        </div>
-                    </div>
-                    <div class="cajaSkills">
-                        <div class="cajaSkillsImg">
-                            <img src="./img/js.svg" alt="icono js tuneado">
-                            <!-- <img src="./img/logo-javascript.svg" alt=""> -->
-                        </div>
-                        <div class="cajaSkillsCalificacion">
-                            <p>700%</p>
-                        </div>
-                    </div>
-                </div>
-                <h2>Herramientas</h2>
-                <div class="caja">
-                    <div class="cajaSkills">
-                        <div class="cajaSkillsImg">
-                            <img src="./img/github-icon-1.svg" alt="">
-                        </div>
-                    </div>
-                    <div class="cajaSkills">
-                        <div class="cajaSkillsImg">
-                            <img src="./img/sass-1.svg" alt="">
-                        </div>
-                    </div>
-                    <div class="cajaSkills">
-                        <div class="cajaSkillsImg">
-                            <img src="./img/jquery.svg" alt="">
-                        </div>
-                    </div>
-                </div>
-                <h2>Proyectos</h2>
-                <div class="caja">
-                    <div class="cajaProyecto">
-                        <h4>Pagina Fintech (HTML-CSS)</h4>
-                        <div class="cajaProyectoImg">
-                            
-                        </div>
-                    </div>
-                    <div class="cajaProyecto">
-                        <h4>Pagina de Peliculas (HTML-CSS-JS-API)</h4>
-                        <div class="cajaProyectoImg">
-                            
+                        <div class="skillsDescripcion">
+                            <h3>Herramientas</h3>
+                            <div class="skillsDescripcionicon">
+                                <img src="./img/github-icon-1.svg" alt="" class="icon">
+                                <img src="./img/node.svg" alt="" class="icon">
+                                <img src="./img/npm.svg" alt="" class="icon">
+                                <img src="./img/vscode.svg" alt="" class="icon">
+                                <img src="./img/git.svg" alt="" class="icon">
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section>
-            <div class="homeCuartoPresentacion">
-                <h2>Contactame en mis redes</h2>
-                <div class="cajaContacto">
-                    <div class="contacto">
-                        <div class="contactoRed github">
-                            <div class="contactoRedIcono">
-                                <img src="./img/github-icon-1.svg" alt="">
-                            </div>
-                            <div class="contactoRedPlataforma">
-                                GitHub
-                            </div>
-                            <div class="contactoRedUsuario">
-                                Santiago-Montero
-                            </div>
+        <section id="projects" class="container">
+            <div class="projects sectionDescription">
+                <h2>Proyectos</h2>
+                <div class="projectDescripcion">
+                    <div class="projectExample">
+                        <div class="projectExampleImg">
+                        <a href="https://santiago-montero.github.io/Mi_Tarjeta/">
+                            <img src="./img/tarjetita-min.png" alt="mi tarjeta">
+                        </a>
                         </div>
-                        <div class="contactoRed instagram">
-                            <div class="contactoRedIcono">
-                                <img src="./img/instagram-2-1.svg" alt="">
-                            </div>
-                            <div class="contactoRedPlataforma">
-                                Instagram
-                            </div>
-                            <div class="contactoRedUsuario">
-                                santi.monter
-                            </div>
-                        </div>
-                        <div class="contactoRed linkedin">
-                            <div class="contactoRedIcono">
-                                <img src="./img/linkedin-icon-2.svg" alt="">
-                            </div>
-                            <div class="contactoRedPlataforma">
-                                Linkedin
-                            </div>
-                            <div class="contactoRedUsuario">
-                                Santiago Montero
-                            </div>
-                        </div>
-                    </div>
-                    <!-- --------------------------------------------- -->
-                    <div class="contacto">
-                        <div class="contactoRed gmail">
-                            <div class="contactoRedIcono">
-                                <img src="./img/official-gmail-icon-2020-.svg" alt="">
-                            </div>
-                            <div class="contactoRedPlataforma">
-                                Gmail
-                            </div>
-                            <div class="contactoRedUsuario">
-                                monterosantiago2001@gmail.com
-                            </div>
-                        </div>
-                        <div class="contactoRed twitter">
-                            <div class="contactoRedIcono">
-                                <img src="./img/twitter-6.svg" alt="">
-                            </div>
-                            <div class="contactoRedPlataforma">
-                                Twitter
-                            </div>
-                            <div class="contactoRedUsuario">
-                                santimonter
-                            </div>
+                        <div class="projectExampleTexto">
+                            <h4>Mi Tarjeta</h4>
+                            <p> HTML , CSS </p>
                         </div>
                     </div>
                 </div>
             </div>
-        </section> 
+        </section>
+        <section id="contact ">
+            <div class="contact sectionDescription "></div>
+            <!-- contactame -->
+        </section>
     </div>
-    <!-- Optional JavaScript; choose one of the two! -->
-    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
-    -->
 </body>
 </html>
