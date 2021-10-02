@@ -1,146 +1,201 @@
 @import "tipografia" ;
+
+$Rojo: #D52023;
+$Bordo: #A61D22;
+$Blanco: #FDFEFE;
+$Azul: #1B3A62;
+$Celeste: #95CBF1;
+$Titulo: 60px;
+$SubTitulo: 40px;
+
 *{
-    // font-family: 'Josefin Slab', serif;
     font-family:'Baloo Tammudu 2', cursive;
 }
 
 
-.homePrimeroPresentacion{
+.navegador{
     display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
+    flex-flow: row wrap;
+    justify-content: space-between;
     align-items: center;
-    height: 70vh;
-    width: 50vw;
-    background: rgba( 255, 255, 255, 0.25 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.5);
-    backdrop-filter: blur( 8px );
-    -webkit-backdrop-filter: blur( 15.5px );
+    background: rgba( 255, 255, 255, 0.15 );
+    backdrop-filter: blur( 6.5px );
+    -webkit-backdrop-filter: blur( 6.5px );
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
     h1{
-        display: flex;
-        margin-top: 20px;
+        color: $Azul;
+        margin-top:20px;
     }
-}
-.homePrimeroPresentacionPerfil {
-    img{
-        width:15vw;
-        height: auto;
-    }
-}
-body {
-    .home{
-        height: 100vh;
-        width: 100vw;
-        scroll-snap-type: y mandatory;
-        overflow-y: scroll;
-        section {
-            height: 100vh;
-            display: flex;
-            text-align: center;
-            justify-content: center;
-            align-items: center;
-            scroll-snap-align: start;
-            &:nth-of-type(1){
-                background-image: url("../img/fondoDibu.jpg");
-            }
-            &:nth-of-type(2){
-                background-color: rgb(21, 43, 61);
-            }
-            &:nth-of-type(3){
-                background-color: rgb(60, 150, 224);
-            }
-            &:nth-of-type(4){
-                background-color: rgb(200, 198, 198);
-            }
+    .nav-link{
+        font-size: 20px;
+        .nav-link:hover{
+            color: $Azul;
         }
     }
 }
-.homeSegundoPresentacion{
+.home{
     display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: flex-start;
-    text-align: center;
-    color: white;
-}
-.homeTerceroPresentacion{
-    display: flex;
-    flex-flow: column wrap;
-
-    .caja{
+    flex-direction: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    .homeDescripcion{
         display: flex;
-        flex-flow: row wrap;
-        justify-content: space-between;
-        .cajaSkills{
-            display: flex;
-            flex-flow: row wrap;
-            justify-content: center;
-            .cajaSkillsImg{
-                display: flex;
-                flex-flow: column wrap;
-                align-items: center;
-                justify-content: center;
-                img {
-                    width: 100px;
-                    height: auto;
-                }
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        .tituloNombre{
+            z-index: 2;
+            font-size: $Titulo;
+            color: $Rojo ;
+        }
+        .tituloDesarrollo{
+            z-index: 2;
+            font-size: $SubTitulo;
+            color: $Bordo;
+        }
+        .burbuja{
+            width: 500px;
+            height: auto;
+            position: absolute;
+            z-index: 1;
+        }
+        .HomeCv{
+            a{
+                text-decoration: none;
+                color:$Blanco;
             }
-            .cajaSkillsImg:hover{
-                img {
-                    width: 80px;
-                    height: auto;
-                }
-            }
+            
+            z-index: 2;
+        }
+    }
+    .homeImg{
+        img{
+            width: 600px;
+            height: auto;
         }
     }
 }
 
-.homeCuartoPresentacion{
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    width: 50%;
-    .cajaContacto{
+.aboutMe{
+    h2{
+        color:$Azul;
+        font-size: $Titulo;
+    }
+    .aboutMeDescripcion{
         display: flex;
-        flex-flow: row wrap;
+        flex-flow: column wrap;
         justify-content: space-between;
         align-items: center;
-        .contacto{
+        width: 100%;
+        background: rgba( 149, 203, 241, 0.15 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 1.5px );
+        -webkit-backdrop-filter: blur( 1.5px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+        .aboutMeDescripcionImg{
+            padding: 25px;
+            img{
+                width: 200px;
+                height: auto;
+            }
+        }
+        .aboutMeDescripcionTexto{
+            width: 50%;
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: flex-start;
+            font-size: 18px;
+            p{
+                display: flex;
+                text-align: center;
+            }
+        }
+        .aboutMeDescripcionRedes{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 10px;
+
+            img{
+                width: 30px;
+                height: auto;
+            }
+        }
+    }
+}
+.skills{
+    h2{
+        color:$Azul;
+        font-size: $Titulo;
+    }
+    .skillsDescripcion{
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        .skillsDescripcionImg{
+            img{
+                width: 500px;
+                height: auto;
+            }
+        }
+        .skillsDescripcionAll{
             display: flex;
             flex-flow: column wrap;
             justify-content: space-between;
-            .contactoRed{
-                display: flex;
+            align-items: center;
+            .skillsDescripcion{
+                margin-top: 50px;
+                display:flex;
                 flex-flow: column wrap;
-                justify-content: space-between;
-                align-items: flex-start;
-                .contactoRedIcono{
-                    display: flex;
-                    flex-flow: column wrap;
-                    justify-content: space-between;
-                    align-items: flex-start;
-                    margin-bottom: 5px;
+                justify-content: space-evenly;
+                align-items: center;
+                .skillsDescripcionicon{
+                    width: 100%;
+                    display:flex;
+                    flex-flow: row wrap;
+                    justify-content: space-evenly;
+                    margin-left: 20px;
                     img{
-                        width: 50px;
+                        width: 90px;
+                        height: auto;
+                    }
+                    .icon:hover{
+                        width: 120px;
                         height: auto;
                     }
                 }
-                .contactoRedPlataforma{
-                    display: flex;
-                    flex-flow: column wrap;
-                    justify-content: space-between;
-                    align-items: flex-start;
-                    
-                }
-                .contactoRedUsuario{
-                    display: flex;
-                    flex-flow: column wrap;
-                    justify-content: space-between;
-                    align-items: flex-start;
-                }
             }
         }
+    }
+}
+
+.sectionDescription{
+    margin-top:100px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.projectDescripcion{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    .projectExampleImg{
+        img{
+            width: 300px;
+            height: auto;
+        }
+    }
+    .projectExampleImg:hover > .projectExampleTexto{
+        display: flex;
+        background-color: black;
+    }
+    .projectExampleTexto{
+        display: none;
     }
 }

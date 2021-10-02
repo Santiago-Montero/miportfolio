@@ -1,0 +1,33 @@
+ <!-- <div class="homeSegundoPresentacion">
+                <h2>Sobre Mi</h2>
+                <p>
+                    Soy un joven estudiante,
+                    sin antecedentes en el ámbito laboral,
+                    queriendo introducirme en este,
+                    para aportar mis conocimientos y
+                    facultades en las actividades que se requieran.
+                </p>
+
+                <h3>Educación</h3>
+
+                <p>2015-2019 Colegio Pio IX</p>
+                <p>Bachiller en Informatica</p>
+
+                <p>2020-Actualidad Universidad Tecnologica Nacional</p>
+                <p>ingenieria en sistemas de informacion, 2do Año</p>
+
+                <p>2020-Actualidad Universidad Tecnologica Nacional</p>
+                <p>ingenieria en sistemas de informacion</p>
+
+                <p>2021-Actualidad Coder House</p>
+                <p>Carrera FullStack</p>
+
+                <p>2021 (Marzo-Junio) Coder House</p>
+                <p>Curso de Desarrollo Web</p>
+                
+                <p>2021 (Junio-Agosto) Coder House</p>
+                <p>Curso de JavaScript</p>
+
+                <p>2021 (Agosto-Octubre) Coder House</p>
+                <p>Curso de React Js</p>
+            </div> -->
