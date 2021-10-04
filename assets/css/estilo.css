@@ -23,6 +23,7 @@
       color: #1B3A62; }
 
 .home {
+  margin-top: 50px;
   display: flex;
   flex-direction: row wrap;
   justify-content: space-between;
