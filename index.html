@@ -11,12 +11,12 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <!--  CSS ilustation cherry -->
-    <link rel="stylesheet" href="./css/estilo.css">
+    <link rel="stylesheet" href="./assets/css/estilo.css">
     <title>Mi portfolio</title>
 </head>
 <body>
     <header>
-        <div class="navegador container">
+        <div class="navegador container fixed-top">
             <h1> < Santi /> </h1>
             <nav class="navbar navbar-expand-lg navbar-light">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,6 +28,9 @@
                             <a class="nav-link" href="#home">Home</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link" href="#aboutme">About me</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="#skills">Skills</a>
                         </li>
                         <li class="nav-item">
@@ -35,9 +38,6 @@
                         </li>
                         <li  class="nav-item">
                             <a class="nav-link" href="#contact">Contact</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#aboutme">About me</a>
                         </li>
                     </ul>
                 </div>
@@ -48,38 +48,38 @@
         <section id="home" class="container">
             <div class="home" id="home">
                 <div class="homeDescripcion">
-                    <img src="./img/blob.svg" class="burbuja" alt="burbuja">
+                    <img src="./assets/img/blob.svg" class="burbuja" alt="burbuja">
                     <h2 class="tituloNombre">Santiago Montero</h2>
                     <h3 class="tituloDesarrollo">Desarrollador Front-end</h3>
                     <div class="HomeCv">
-                        <a href="./cv/Montero_Santiago_cv.pdf" download="Montero_Santiago_cv">
+                        <a href="./assets/cv/Montero-Santiago-cv.pdf" download="Montero_Santiago_cv">
                             Descargar Cv
                         </a>
                     </div>
                 </div>
                 <div class="homeImg">
-                    <img src="./img/homeImg.png" alt="imagen de desarrollo fronend" >
+                    <img src="./assets/img/homeImg.png" alt="imagen de desarrollo fronend" >
                 </div>
             </div>
         </section>
         <section id="aboutme" class="container">
-            <div class="aboutMe sectionDescription animate__animated animate__backInDown">
+            <div class="aboutMe sectionDescription ">
                 <h2>Sobre Mi</h2>
                 <div class="aboutMeDescripcion">
                     <div class="aboutMeDescripcionImg">
-                        <img src="./img/foto13.png" alt="santiago montero">
+                        <img src="./assets/img/foto13.png" alt="santiago montero">
                     </div>
                     <div class="aboutMeDescripcionTexto">
-                        <p>Estudiante de ingeniera en sistemas en la universidad tecnológica nacional, con conocimientos en desarrollo frontend. Apasionado por la programación y con ganas de poder introducirme  en el ámbito laboral, para poder aportar mis conocimientos y poder adquirir nuevos.</p>
+                        <p>Estudiante de ingeniera en sistemas en la universidad tecnológica nacional, con conocimientos en desarrollo frontend. Apasionado por la programación y con ganas de poder introducirme  en el ámbito laboral, para poder aportar mis conocimientos y adquirir nuevos.</p>
                         <div class="aboutMeDescripcionRedes">
                             <a href="https://www.linkedin.com/in/santiago-montero-13b8721b8">
-                                <img src="./img/linkedin-icon-2.svg" alt="linkedin" >
+                                <img src="./assets/img/linkedin-icon-2.svg" alt="linkedin" >
                             </a>
                             <a href="https://github.com/Santiago-Montero">
-                                <img src="./img/github-icon-1.svg" alt="github" >
+                                <img src="./assets/img/github-icon-1.svg" alt="github" >
                             </a>
                             <a href="https://www.instagram.com/santi.monter/">
-                                <img src="./img/instagram-2-1.svg" alt="instagram" >
+                                <img src="./assets/img/instagram-2-1.svg" alt="instagram" >
                             </a>
                         </div>
                     </div>
@@ -89,34 +89,37 @@
         <section id="skills" class="container">
             <div class="skills sectionDescription">
                 <h2>Skills</h2>
-                <div class="skillsDescripcion animate__animated animate__backInDown">
+                <div class="skillsDescripcion">
                     <div class="skillsDescripcionImg">
-                        <img src="./img/skillImg.png" alt="programador">
+                        <img src="./assets/img/skillImg.png" alt="programador">
                     </div>
                     <div class="skillsDescripcionAll">
                         <div class="skillsDescripcion">
                             <h3>Lenguajes / Frameworks</h3>
                             <div class="skillsDescripcionicon">
-                                <img src="./img/html-5.svg" alt="" class="icon">
-                                <img src="./img/css3.svg" alt="" class="icon">
-                                <img src="./img/js1.svg" alt="" class="icon">
-                                <img src="./img/react.svg" alt="" class="icon">
-                                <img src="./img/bootstrap.svg" alt="" class="icon">
+                                <img src="./assets/img/html-5.svg" alt="html" class="icon">
+                                <img src="./assets/img/css3.svg" alt="css" class="icon">
+                                <img src="./assets/img/js1.svg" alt="js" class="icon">
+                                <img src="./assets/img/react.svg" alt="react.js" class="icon">
+                                <img src="./assets/img/bootstrap.svg" alt="boostrap" class="icon">
                                 
                             </div>
                             <div class="skillsDescripcionicon">
-                                <img src="./img/sass-1.svg" alt="" class="icon">
-                                <img src="./img/jquery.svg" alt="" class="icon">
+                                <img src="./assets/img/sass-1.svg" alt="sass" class="icon">
+                                <img src="./assets/img/jquery.svg" alt="jquery" class="icon">
                             </div>
                         </div>
                         <div class="skillsDescripcion">
                             <h3>Herramientas</h3>
                             <div class="skillsDescripcionicon">
-                                <img src="./img/github-icon-1.svg" alt="" class="icon">
-                                <img src="./img/node.svg" alt="" class="icon">
-                                <img src="./img/npm.svg" alt="" class="icon">
-                                <img src="./img/vscode.svg" alt="" class="icon">
-                                <img src="./img/git.svg" alt="" class="icon">
+                                <img src="./assets/img/github-icon-1.svg" alt="github" class="icon">
+                                <img src="./assets/img/node.svg" alt="node.js" class="icon">
+                                <img src="./assets/img/npm.svg" alt="npm" class="icon">
+                                
+                            </div>
+                            <div class="skillsDescripcionicon">
+                                <img src="./assets/img/vscode.svg" alt="vscode" class="icon">
+                                <img src="./assets/img/git.svg" alt="git" class="icon">
                             </div>
                         </div>
                     </div>
@@ -127,23 +130,72 @@
             <div class="projects sectionDescription">
                 <h2>Proyectos</h2>
                 <div class="projectDescripcion">
-                    <div class="projectExample">
-                        <div class="projectExampleImg">
-                        <a href="https://santiago-montero.github.io/Mi_Tarjeta/">
-                            <img src="./img/tarjetita-min.png" alt="mi tarjeta">
-                        </a>
-                        </div>
-                        <div class="projectExampleTexto">
+                    <div class="projectExample figure"> 
+                        <img src="./assets/img/fintech.png" alt="mi tarjeta">
+                        <div class="projectExampleTexto capa">
                             <h4>Mi Tarjeta</h4>
-                            <p> HTML , CSS </p>
+                            <p>Pagina Fintech</p>
+                            <p> HTML, CSS, Bootstrap</p>
+                            <div class="botonesCapa">
+                                <a class="btn  btnc" href="https://github.com/Santiago-Montero/Mi_Tarjeta"> Repositorio</a>
+                                <a class="btn  btnc" href="https://santiago-montero.github.io/Mi_Tarjeta/"> Pagina web</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="projectExample figure"> 
+                        <img src="./assets/img/movie.png" alt="mi tarjeta">
+                        <div class="projectExampleTexto capa">
+                            <h4>Mis Pelis</h4>
+                            <p>Pagina de peliculas</p>
+                            <p> HTML, CSS, js, Api </p>
+                            <div class="botonesCapa">
+                                <a class="btn btnc" href="https://github.com/Santiago-Montero/peliculas"> Repositorio</a>
+                                <a class="btn btnc" href="https://santiago-montero.github.io/peliculas/"> Pagina web</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="projectExample figure"> 
+                        <img src="./assets/img/ecommerce.png" alt="mi tarjeta">
+                        <div class="projectExampleTexto capa">
+                            <h4>Your Box</h4>
+                            <p>Pagina Ecommerce</p>
+                            <p> HTML , CSS, Bootstrap, js, React.js, Firebase</p>
+                            <div class="botonesCapa">
+                                <a class="btn  btnc" href="https://github.com/Santiago-Montero/Ecommerce-Montero"> Repositorio</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="contact ">
-            <div class="contact sectionDescription "></div>
-            <!-- contactame -->
+        <section id="contact" class="container">
+            <div class="contact sectionDescription">
+                <h2>Contactame</h2>
+                <div class="contactDescripcion">
+                    <div class="contactDescripcionIcon">
+                            <a class="contactDescripcionIconText" href="http://gmail.com">
+                                <img src="./assets/img/official-gmail-icon-2020-.svg" alt="gmail icon" >
+                                <p>santimonter200123@gmail.com</p>
+                            </a>
+                            <a  class="contactDescripcionIconText"href="https://github.com/Santiago-Montero">
+                                <img src="./assets/img/github-icon-1.svg" alt="github icon">
+                                <p>santiago-montero</p>
+                            </a>
+                    </div>
+                    <div class="contactDescripcionIcon">
+                        <a  class="contactDescripcionIconText" href="https://www.linkedin.com/in/santiago-montero-13b8721b8">
+                            <img src="./assets/img/linkedin-icon-2.svg" alt="linkedin icon">
+                            <p>Santiago Montero</p>
+                        
+                        </a>
+                        <a class="contactDescripcionIconText" href="https://www.instagram.com/santi.monter/">
+                            <img src="./assets/img/instagram-2-1.svg" alt="instagram icon">
+                            <p>santi.monter</p>
+                        
+                        </a>
+                    </div>
+                </div>
+            </div>
         </section>
     </div>
     

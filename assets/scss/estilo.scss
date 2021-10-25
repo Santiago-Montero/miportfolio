@@ -10,6 +10,7 @@ $SubTitulo: 40px;
 
 *{
     font-family:'Baloo Tammudu 2', cursive;
+    scroll-behavior: smooth;
 }
 
 
@@ -35,6 +36,7 @@ $SubTitulo: 40px;
     }
 }
 .home{
+    margin-top: 50px;
     display: flex;
     flex-direction: row wrap;
     justify-content: space-between;
@@ -62,6 +64,7 @@ $SubTitulo: 40px;
         }
         .HomeCv{
             a{
+                font-size: 25px;
                 text-decoration: none;
                 color:$Blanco;
             }
@@ -78,10 +81,6 @@ $SubTitulo: 40px;
 }
 
 .aboutMe{
-    h2{
-        color:$Azul;
-        font-size: $Titulo;
-    }
     .aboutMeDescripcion{
         display: flex;
         flex-flow: column wrap;
@@ -127,13 +126,10 @@ $SubTitulo: 40px;
     }
 }
 .skills{
-    h2{
-        color:$Azul;
-        font-size: $Titulo;
-    }
     .skillsDescripcion{
         display: flex;
         flex-flow: row wrap;
+        justify-content: space-around;
         align-items: center;
         .skillsDescripcionImg{
             img{
@@ -153,17 +149,13 @@ $SubTitulo: 40px;
                 justify-content: space-evenly;
                 align-items: center;
                 .skillsDescripcionicon{
+                    margin-top: 20px;
                     width: 100%;
                     display:flex;
                     flex-flow: row wrap;
                     justify-content: space-evenly;
-                    margin-left: 20px;
                     img{
                         width: 90px;
-                        height: auto;
-                    }
-                    .icon:hover{
-                        width: 120px;
                         height: auto;
                     }
                 }
@@ -178,24 +170,155 @@ $SubTitulo: 40px;
     flex-flow: column wrap;
     align-items: center;
     justify-content: space-evenly;
+    h2{
+        color:$Azul;
+        font-size: $Titulo;
+    }
 }
 
 .projectDescripcion{
     display: flex;
     flex-flow: row wrap;
-    align-items: center;
-    justify-content: space-evenly;
-    .projectExampleImg{
+    justify-content: space-around;
+    width: 100%;
+    .figure{
+        margin-top: 20px;
+        position: relative;
+        overflow: hidden;
+        border-radius: 4px;
+        box-shadow: 0px 8px 25px rgba(0,0,0,0.50);
+        cursor:pointer;
+        width: 300px;
+        height: 250px;
+        background-color: $Celeste;
+        img{
+            margin: auto;
+            width: 300px;
+            height: auto;
+        }
+        .capa{
+            position: absolute;
+            top:0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(6, 40, 80, 0.7);
+            transition: all 500ms ease-out;
+            opacity: 0;
+            visibility: hidden;
+            text-align: center;
+        }
+    }
+}
+.figure:hover> .capa{
+    opacity: 1;
+    visibility: visible;
+    }
+.figure:hover> .capa h4{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.capa h4{
+    font-size: 25px;
+    color: $Blanco;
+    transition: all 500ms ease-out;
+    margin-top: 8px;
+}
+.capa p{
+    font-size: 20px;
+    color: $Blanco;
+    width: 100%;
+    max-width: 220px;
+    margin: auto;
+}
+.botonesCapa .btnc{
+    color: $Blanco;
+    padding-top: 12px;
+    border: 1px solid $Blanco;
+}
+.contact{
+    width: 100%;
+    .contactDescripcion{
+        margin-top: 20px;
+        margin-bottom:  20px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        .contactDescripcionIcon{
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: space-between;
+            align-items: center;
+            width: 50%;
+        .contactDescripcionIconText{
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            color: $Azul;
+            p{
+                font-size: 20px;
+                margin-top: 10px;
+            }
+        }
+            img{
+                width: 50px;
+                height: auto;
+            }
+        }
+    }
+}
+
+
+@media (max-width:1000px){
+    .home{
+        display: flex;
+        flex-direction: row wrap;
+        justify-content: space-between;
+        align-items: center;
+        .homeDescripcion{
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            align-items: center;
+            .tituloNombre{
+                z-index: 2;
+                font-size: 35px;
+                color: $Rojo ;
+            }
+            .tituloDesarrollo{
+                z-index: 2;
+                font-size: 15px;
+                color: $Bordo;
+            }
+            .burbuja{
+                width: 200px;
+                height: auto;
+                position: absolute;
+                z-index: 1;
+            }
+            .HomeCv{
+                a{
+                    text-decoration: none;
+                    color:$Blanco;
+                }
+                
+                z-index: 2;
+            }
+        }
+        .homeImg{
+            img{
+                width: 300px;
+                height: auto;
+            }
+        }
+    }
+    .skillsDescripcionImg{
         img{
             width: 300px;
             height: auto;
         }
-    }
-    .projectExampleImg:hover > .projectExampleTexto{
-        display: flex;
-        background-color: black;
-    }
-    .projectExampleTexto{
-        display: none;
     }
 }

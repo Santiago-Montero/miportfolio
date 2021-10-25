@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap");
 * {
-  font-family: 'Baloo Tammudu 2', cursive; }
+  font-family: 'Baloo Tammudu 2', cursive;
+  scroll-behavior: smooth; }
 
 .navegador {
   display: flex;
@@ -22,6 +23,7 @@
       color: #1B3A62; }
 
 .home {
+  margin-top: 50px;
   display: flex;
   flex-direction: row wrap;
   justify-content: space-between;
@@ -47,15 +49,12 @@
     .home .homeDescripcion .HomeCv {
       z-index: 2; }
       .home .homeDescripcion .HomeCv a {
+        font-size: 25px;
         text-decoration: none;
         color: #FDFEFE; }
   .home .homeImg img {
     width: 600px;
     height: auto; }
-
-.aboutMe h2 {
-  color: #1B3A62;
-  font-size: 60px; }
 
 .aboutMe .aboutMeDescripcion {
   display: flex;
@@ -93,13 +92,10 @@
       width: 30px;
       height: auto; }
 
-.skills h2 {
-  color: #1B3A62;
-  font-size: 60px; }
-
 .skills .skillsDescripcion {
   display: flex;
   flex-flow: row wrap;
+  justify-content: space-around;
   align-items: center; }
   .skills .skillsDescripcion .skillsDescripcionImg img {
     width: 500px;
@@ -116,16 +112,13 @@
       justify-content: space-evenly;
       align-items: center; }
       .skills .skillsDescripcion .skillsDescripcionAll .skillsDescripcion .skillsDescripcionicon {
+        margin-top: 20px;
         width: 100%;
         display: flex;
         flex-flow: row wrap;
-        justify-content: space-evenly;
-        margin-left: 20px; }
+        justify-content: space-evenly; }
         .skills .skillsDescripcion .skillsDescripcionAll .skillsDescripcion .skillsDescripcionicon img {
           width: 90px;
-          height: auto; }
-        .skills .skillsDescripcion .skillsDescripcionAll .skillsDescripcion .skillsDescripcionicon .icon:hover {
-          width: 120px;
           height: auto; }
 
 .sectionDescription {
@@ -134,17 +127,128 @@
   flex-flow: column wrap;
   align-items: center;
   justify-content: space-evenly; }
+  .sectionDescription h2 {
+    color: #1B3A62;
+    font-size: 60px; }
 
 .projectDescripcion {
   display: flex;
   flex-flow: row wrap;
-  align-items: center;
-  justify-content: space-evenly; }
-  .projectDescripcion .projectExampleImg img {
+  justify-content: space-around;
+  width: 100%; }
+  .projectDescripcion .figure {
+    margin-top: 20px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 4px;
+    box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
     width: 300px;
-    height: auto; }
-  .projectDescripcion .projectExampleImg:hover > .projectExampleTexto {
+    height: 250px;
+    background-color: #95CBF1; }
+    .projectDescripcion .figure img {
+      margin: auto;
+      width: 300px;
+      height: auto; }
+    .projectDescripcion .figure .capa {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(6, 40, 80, 0.7);
+      transition: all 500ms ease-out;
+      opacity: 0;
+      visibility: hidden;
+      text-align: center; }
+
+.figure:hover > .capa {
+  opacity: 1;
+  visibility: visible; }
+
+.figure:hover > .capa h4 {
+  margin-top: 20px;
+  margin-bottom: 10px; }
+
+.capa h4 {
+  font-size: 25px;
+  color: #FDFEFE;
+  transition: all 500ms ease-out;
+  margin-top: 8px; }
+
+.capa p {
+  font-size: 20px;
+  color: #FDFEFE;
+  width: 100%;
+  max-width: 220px;
+  margin: auto; }
+
+.botonesCapa .btnc {
+  color: #FDFEFE;
+  padding-top: 12px;
+  border: 1px solid #FDFEFE; }
+
+.contact {
+  width: 100%; }
+  .contact .contactDescripcion {
+    margin-top: 20px;
+    margin-bottom: 20px;
     display: flex;
-    background-color: black; }
-  .projectDescripcion .projectExampleTexto {
-    display: none; }
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%; }
+    .contact .contactDescripcion .contactDescripcionIcon {
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: space-between;
+      align-items: center;
+      width: 50%; }
+      .contact .contactDescripcion .contactDescripcionIcon .contactDescripcionIconText {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        color: #1B3A62; }
+        .contact .contactDescripcion .contactDescripcionIcon .contactDescripcionIconText p {
+          font-size: 20px;
+          margin-top: 10px; }
+      .contact .contactDescripcion .contactDescripcionIcon img {
+        width: 50px;
+        height: auto; }
+
+@media (max-width: 1000px) {
+  .home {
+    display: flex;
+    flex-direction: row wrap;
+    justify-content: space-between;
+    align-items: center; }
+    .home .homeDescripcion {
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: center;
+      align-items: center; }
+      .home .homeDescripcion .tituloNombre {
+        z-index: 2;
+        font-size: 35px;
+        color: #D52023; }
+      .home .homeDescripcion .tituloDesarrollo {
+        z-index: 2;
+        font-size: 15px;
+        color: #A61D22; }
+      .home .homeDescripcion .burbuja {
+        width: 200px;
+        height: auto;
+        position: absolute;
+        z-index: 1; }
+      .home .homeDescripcion .HomeCv {
+        z-index: 2; }
+        .home .homeDescripcion .HomeCv a {
+          text-decoration: none;
+          color: #FDFEFE; }
+    .home .homeImg img {
+      width: 300px;
+      height: auto; }
+  .skillsDescripcionImg img {
+    width: 300px;
+    height: auto; } }
